@@ -74,6 +74,7 @@
     <con:setting id="FlowLayout">false</con:setting>
     <con:setting id="ErrorDetails">true</con:setting>
     <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="698f8cb3-198d-4786-a319-b8699305a578fileName">case00282571</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
@@ -113,7 +114,6 @@
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
-  <con:reporting/>
   <con:beforeRunScript>com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "serialnum", "A5" ) 
 log.info("serialnum = "+com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "serialnum") )</con:beforeRunScript>
   <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep" target="${=testStepResult.testStep.getModelItem().toString().contains(&quot;RestTestRequestStep&quot;)}">
