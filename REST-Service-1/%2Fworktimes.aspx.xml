@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/worktimes.aspx" path="" id="f4cb32f1-e2d4-400a-b936-c4ecd2fa2604" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f4cb32f1-e2d4-400a-b936-c4ecd2fa2604fileName">%2Fworktimes.aspx</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="33f6fc82-d2b0-4802-9ce0-e4ead4cc849d" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>401 405</con:status>
+      <con:params/>
+      <con:element xmlns:xht="http://www.w3.org/1999/xhtml">xht:html</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>0</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>405 500</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:request name="GET Request" id="b07dc915-8385-4c93-a379-7005f578a393" mediaType="application/json" sslKeystore="" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        <con:setting id="RecordRequestRepresentations">false</con:setting>
+      </con:settings>
+      <con:endpoint>https://test.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://hrm/worktimes.aspx</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:attachment>
+        <con:name>log.txt</con:name>
+        <con:contentType>text/plain</con:contentType>
+        <con:size>20471</con:size>
+        <con:contentId>log.txt</con:contentId>
+        <con:part xsi:nil="true"/>
+        <con:data>UEsDBBQACAgIADxWP0wAAAAAAAAAAAAAAAAHAAAAbG9nLnR4dO1bW2/bOhJ+3gLnP3APukD2IJYl3+IIKHZza+uiTnIip12g6QMt0TYTSVRJyk52sf99h6RkO/I9t3YDA25qSTPfDGeGo5mR3Bmk6JQNUaWK7H230nBtBx2ddFDFdvbc1un7M/eC4ODu4LyFKpZj2aWo5J0enHsfzzpISMwlCVAJeXdCkgglnCWES0qEi/5z5r37SuOAjQRy7F10KQhHMY7Iu+vIZ2FIfMn4f39701mpwEEQ0LiPvh25V+ec9TmO0HsaEnHlRSD/kGB+letYKup41aXxFbmVVwkTss+J+BGW9q1qyXHsinUddP2aY11j/h1JhoCMxIKyWCA/xEIkWA5eTD9QTKtTebQ6F6RPwRscHFNBn44Pj1DA6ZBwgXqcRdOwAeXaC3cu+sZ435rYyDrWLLvIZ5EVUZ8zwXrSgivgRbigTWd5f3729KGh/r6OdjSmkuKQ/hvUEwwnKS0JIiUYMNNPmVHFiriaipOrAql1G4WrxH09uDh121QI5Rzhc5pIEMHCAOJwfV9pB2Xcay0wi4ZQ+SAeW/3hwTEGugpIxErjw7VN0BkQxEnCuJw4HP3+UH1+RwEjAsVMQiSBLhZS+AHp4TSUs3JGNAxRl6BUkMCap221YD7PeBhJQI3wLY3SCAmIFsR6+lyAxaDLMA/gm8RdLIjaKw2nVkPtw7kS6vMdlIRpn8bLYs4yQXdlKMUVV3YppbdRyZwpgXUskz5eQO415Xgi2CkFyvgvJBsntNSncko8rNzIBmTYyQepZO+xcXmPwf4615TnnPTEukSzq2g81Sry7DHC/T7h+TIqVh3uBEvt+GQaGDtGP+TYiFNyl5qnFakt1SZywIJVtB7s5FgeJNQwkdUOwjEJD1OqkuJT0naIkAdCqFqAxU8N7EmSPAPdau83MscLFDKsQCEG9up7KBJrxQ5kwvv863B9BkoVciPGb6AE8MmyqMvScCmL9zHPwnvF3hxpsC6o464BMRPVg6hyy0duOSDDsj8g/g1Lpc4JEqwnykfZKevixOtYytARVn7P1cjQ1lHiZe7Zjj1/W0N46LrokXfsDMbcr7ODRYufVuX45PDyg9vhd/r+x9CkVIJqwoeijejI9cCql621sE7ZFGcaB5vyf86YB1AYTvG66FPbe/HFPFqZLyA+mEgHnxqruGhpCjf/WTfkbhdBHS5RxALaowT42ixGHkmQXUN2EyS61X0Q6hmp83RyNjcQ8VNO1sKa7+31+WcNrHkXGriy8WJUepnv7RmsGWUM7zrK6C3diof33T0F8U2RlRy7pNgd17bh813n5MsWkhwUh5bWcfbqVadZrZScXQQZKVW1pyTonfb6GWRHxd003BOv70JZnFC4yWTEHeBTmkKWs/fGxIsjpLiO3A4aFVIzlo+GhDiBJk81bvfjZR5v9QEBy4dw+GUF2kIn5fyL3JRf/9mOKq7lCRxVhHyUo+bs5tywC7bQrHcyByuHQ9JL4Sa4opy6ID9SqAlasUh0Ev1Z9eeWdku7pf01aS+ISKAiJmsniXkMs9mrVshebZ2w0LfjfGD0HWEtxc7q/A+cpYnYHR/rrz0tnhJ9MJ61qQPJWNjFXE1EQRtos8W8aZNTnLzkapjaI9ehXtAB7tFjJarPp4Qp6HIlagUlmhMdKs+og67acx0aBR0aEx2c57SDuRXmWjhFNSr1KT0az6fIuWmNxVgRpxgYL2MP7RNQRnVBrVgSDqKIubooWpy9541ZNS7Jio7F45KFKzIdekIXR1rtWbd9PrYB9huIpsb+/CHRDF8+/s5H32rCggagkMqJQdeMwqH4rji1vVqz2qg1UftwHeDW1HMXPTWfzOgB7oZAF0tuIT2YCQicmt8T6zkmTuiVcgk0x1CfpqGcu7TiJMtTTwvV2hY+ULyH4jhuteLWi82LuVPkzxuEPyARNgOb8Zgqm9r8rWLruU15PLcpL5zblEPaLU9m3dngqkilxrV/LUMklMmQjjAnZUMInIKl3AdZtyKAPyyx4AsaUTlAsOo+kac4ImZ8N5Ayccvl0WhkjaoW4/1yxbZrZbup2Mo09sM0IK/FEv9qf/a0Yhvaw5lwvhZT3EbhJkaA9Zed/f1mOc6JXoshhLrWW20LUaLaEglnPa0ppC3qlx3LUTivxRq3EY0IRHzdrm+4R+pl+EBUKYDXZo2a42ycQR3ntVlDnT2JhyRkCVlpDrME/aBB8Wm7qC9lkiGUX5dZfKYKrMeYxSC8MrMYXzuVDbdPVSUThVDKw+V1mcX4+lFmMRDrmCUv/jODyLuE5A8VMykh83GoJrNupelUy614yKAfzdvSatUSQ/8fIxEUnhkukPchaxoyeZvKeAER79Qf+5kFgWvfwb8XEuM8MhLuPzUf4Yf5ehbltze/vfn2x8VJ++zLybFq5AY0IIjEQcIodK9/fFcEs3KKw/9VBtqH3ZHJmwarulXHdZrzu1qBBB5CwgClHviWn8GvTc36Ti4uzi7c9xiSiwZO0i707wME21rgPtEvMAqVc7qQc0z7avmME4sMoZm32iwgYUuSyCNKB2h+24bxnw3i7OGm31Sg+UQAUNVrOBo0yzrZU2ILPgcJFad4SPsY1tLhhFjRfXQ1wkAIXeMhtkIMNy+og9V5SwWar9+Z6OisdHLrk0Qdavq/YMitaTym/qBUwYBmXgo68CHXCcZrtT2LAtAN2bmMb2I2ipGnE+Hf56Icg0qgKdj5PkwrSsJVOLMrMBir+GIiLRL3KbMiKObFnRVQ9VqrP7AuDA4dko84DkI1hcpNkoFm53eWUSq93Er1aQSullTbX0dSFlDH2THh40s7s5c0btVegivSrnm1RanhTR9kob9z76QG3Ftmkm4qch3PFUK2QjMNIjtzLpnFr8Q8hK84YHys2OSMWWZjgrBimyo8qgJzDHGizh/CafXS8s7saS2hUbsvobBnRZqo1+Ssy5aXfRN6n+5MTmgYx640lwLBR+33NksF+ZzlCmugg8aDDRaSI7Ddzc4sTQbf2Bw9UkcalgSLgPedwpbFI2kdfO1oI7WhZAOHqjfF74Mt3fS/CsJRPo61Es5U4tLL16BLmW8tMVJtw6eHAsyXvjZfLDFV/tmUL5eXpw7NqFL1JkIfxDxX8mrGz7Q/kCOi/k6lN05M2b2JsecjPcBr84E2XNejrGl+D/OiftBkf6YkJQ8RO8WNdX3wtm7bm7C9rVo8jZ+aQ6jnmFTeWaZoUT7hqogEp7BzTodQDPYhi5xidfNGpjZZBAENqjSV3zGLwLNvP8FlL7tq8HVJFDD9YEwY2rGUNRV9VikFA9Y2NvkaHP83Jl8W9Gty5tmhM1CFCJQvUXIWmyzznvH3NFRKPRxLnxdjpCcA+kihIeD+4O6xWD+Hf1HwHWH1syHUvXOnOo6zVJ712iRi/O6Ec8Zd9OEIsSHhA4CCTi2i6pdJPiHFJ8bb3nHbO257x23vuO0dt73jtnfc9o7b3nHbO/7Kjcy2d9z2jtve8dfpHSuuXdmsdyzUYroI9SSWqTjEPO8VaxXSqNaavUW9YrGyVbWnLkPGrzjT7IcXedVYkPCcfWPVaWz7xm3f+Mv0jQddITn2pXcX+wcC/mRI0NW9dXSuWEJhZNTr82Jum2222WabbbbZ5rVkm/8BUEsHCFrA4MydCgAA908AAFBLAQIUABQACAgIADxWP0xawODMnQoAAPdPAAAHAAAAAAAAAAAAAAAAAAAAAABsb2cudHh0UEsFBgAAAAABAAEANQAAANIKAAAAAA==</con:data>
+        <con:id>b165d0ed-aa9e-4468-bc36-11a7b7ac9e04</con:id>
+      </con:attachment>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="999171ee-7246-4f31-8695-77a559258f06">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>

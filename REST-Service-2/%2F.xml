@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/" path="/" id="9c50aebd-46a3-4e9f-8712-7ba5257578df" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9c50aebd-46a3-4e9f-8712-7ba5257578dffileName">%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="7ee56773-4fa8-498a-a7a1-69bf24ef011a" method="POST">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>file</con:name>
+        <con:value>file:C:/Users/Kirill.Zakharov/Desktop/2017-11-20_1543.png</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>file:C:/Users/Kirill.Zakharov/Desktop/2017-11-20_1543.png</con:default>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>405</con:status>
+      <con:params/>
+      <con:element>html</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>multipart/form-data</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>0</con:status>
+      <con:params/>
+      <con:element>data</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>multipart/mixed</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="POST Request" id="2f597d32-393e-4f82-9b8d-cf854888d730" mediaType="multipart/mixed" postQueryString="true">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        <con:setting id="RecordRequestRepresentations">true</con:setting>
+      </con:settings>
+      <con:endpoint>http://test.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://test.ru/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:attachment>
+        <con:name>2017-11-20_1543.png</con:name>
+        <con:contentType>image/png</con:contentType>
+        <con:contentId>2017-11-20_1543.png</con:contentId>
+        <con:url>C:/Users/Kirill.Zakharov/Desktop/2017-11-20_1543.png</con:url>
+        <con:id>e14495e5-b02b-41c0-98eb-0d2e0c2cb542</con:id>
+      </con:attachment>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <entry key="file" value="file:2017-11-20_1543.png" xmlns="http://eviware.com/soapui/config"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>file</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

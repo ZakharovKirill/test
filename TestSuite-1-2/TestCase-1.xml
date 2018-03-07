@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="196d3a86-c2c7-4927-a6c4-627d2d67d449" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="196d3a86-c2c7-4927-a6c4-627d2d67d449fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="dabbec00-63c5-453b-b73d-050d3a49ca20">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>5</generatedDataCount>
+          <generatorsTotalNumber>2</generatorsTotalNumber>
+          <lastSelectedProperty>1</lastSelectedProperty>
+          <GeneratorType0>INT</GeneratorType0>
+          <PropertyName0>x</PropertyName0>
+          <repetitionCountx>0</repetitionCountx>
+          <repeatValuesx>false</repeatValuesx>
+          <IntegerDataGeneratorMinValuex>1</IntegerDataGeneratorMinValuex>
+          <IntegerDataGeneratorMaxValuex>100</IntegerDataGeneratorMaxValuex>
+          <IntegerDataGeneratorStepValuex>1</IntegerDataGeneratorStepValuex>
+          <IntegerDataGeneratorConsequentValuesx>false</IntegerDataGeneratorConsequentValuesx>
+          <GeneratorType1>INT</GeneratorType1>
+          <PropertyName1>y</PropertyName1>
+          <repetitionCounty>0</repetitionCounty>
+          <repeatValuesy>false</repeatValuesy>
+          <IntegerDataGeneratorMinValuey>1</IntegerDataGeneratorMinValuey>
+          <IntegerDataGeneratorMaxValuey>100</IntegerDataGeneratorMaxValuey>
+          <IntegerDataGeneratorStepValuey>1</IntegerDataGeneratorStepValuey>
+          <IntegerDataGeneratorConsequentValuesy>false</IntegerDataGeneratorConsequentValuesy>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>x</con:property>
+      <con:property>y</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="83ce7bf0-1c70-4fa6-bac5-a12db7ed9ad9">
+    <con:settings/>
+    <con:config service="REST Service 1" methodName="GET" resourcePath="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="b8ecf84d-4502-4e98-afe8-8595c9d9875c" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="testcount" value="${DataSource#x}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8080/test</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/test</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request2" id="221c60aa-0379-4187-96d7-d60bbbf5f2ea">
+    <con:settings/>
+    <con:config service="REST Service 1" methodName="GET" resourcePath="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request2" id="f1f6171e-e9e5-43c6-a450-d2af0127474d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="testcount" value="${DataSource#y}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://localhost:8080/test</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/test</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="8203f477-63c1-47bc-9597-7bb41a657f14">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>REST Request</targetStep>
+    </con:config>
+  </con:testStep>
+  <con:properties>
+    <con:property>
+      <con:name>responseList</con:name>
+      <con:value>["unique_id":"65", "unique_id":"100", "unique_id":"91", "unique_id":"90", "unique_id":"39", "unique_id":"100", "unique_id":"29", "unique_id":"33", "unique_id":"92", "unique_id":"78"]</con:value>
+    </con:property>
+    <con:property>
+      <con:name>test</con:name>
+      <con:value/>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>dabbec00-63c5-453b-b73d-050d3a49ca20</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>83ce7bf0-1c70-4fa6-bac5-a12db7ed9ad9</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>221c60aa-0379-4187-96d7-d60bbbf5f2ea</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:tagId>3cce8a27-a4d6-4505-9ea2-be539da22232</con:tagId>
+</con:testCase>

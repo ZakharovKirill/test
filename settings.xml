@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="698f8cb3-198d-4786-a319-b8699305a578" created="2.1.0" activeEnvironment="Default environment" name="Project 3" resourceRoot="" updated="2.2.0 20171026-0943" runType="SEQUENTIAL" defaultScriptLanguage="Groovy" soapui-version="6.0.0" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="PDF"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="true"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1 2"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value="TestSuite Report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value="test=testtest"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\Kirill.Zakharov\Desktop\logs"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="true"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value="Project Report"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Run in-process" value="true"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value="TestCase test"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="C:\Users\Kirill.Zakharov\Desktop\logs"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>count</con:name>
+    </con:property>
+    <con:property>
+      <con:name>test</con:name>
+      <con:value>test313</con:value>
+    </con:property>
+    <con:property>
+      <con:name>serialnum</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>row</con:name>
+      <con:value>A4</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer>
+    <con:crypto>
+      <con:source>C:/Users/Kirill.Zakharov/Desktop/test/SmartBear Test Client Keystore.jks</con:source>
+      <con:password>Test_All</con:password>
+      <con:type>KEYSTORE</con:type>
+    </con:crypto>
+  </con:wssContainer>
+  <con:databaseConnectionContainer>
+    <con:databaseConnection>
+      <con:name>test</con:name>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://127.0.0.1:1443;databaseName=OrdersBase;integratedSecurity=true</con:connectionString>
+      <con:password>Trfnthbyf344322362</con:password>
+      <con:connectionProperties/>
+    </con:databaseConnection>
+  </con:databaseConnectionContainer>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting/>
+  <con:beforeRunScript>com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "serialnum", "A5" ) 
+log.info("serialnum = "+com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "serialnum") )</con:beforeRunScript>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep" target="${=testStepResult.testStep.getModelItem().toString().contains(&quot;RestTestRequestStep&quot;)}">
+    <con:script>import groovy.json.JsonSlurper
+
+def json = new JsonSlurper().parseText(testStepResult.getResponseContent())
+def list;
+if (!context.hasProperty("list")){
+    list = [];
+}
+else {
+    list = context.getProperty("list")
+}
+list.add('"unique_id":"'+json.unique_id+'"')
+context.setProperty("list", list)
+testRunner.testCase.setPropertyValue("responseList", list.toString())</con:script>
+  </con:eventHandlers>
+  <con:environment id="999171ee-7246-4f31-8695-77a559258f06" name="test">
+    <con:service type="REST" name="REST Service 1">
+      <con:endpoint authProfile="Inherit From Parent">http://hrm</con:endpoint>
+    </con:service>
+    <con:service type="SOAP" name="Test_serviceSoap">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="REST Service 2">
+      <con:endpoint authProfile="Inherit From Parent"/>
+    </con:service>
+    <con:property>
+      <con:name>count</con:name>
+      <con:value>5</con:value>
+    </con:property>
+    <con:property>
+      <con:name>test</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>serialnum</con:name>
+      <con:value/>
+    </con:property>
+    <con:property>
+      <con:name>row</con:name>
+      <con:value/>
+    </con:property>
+    <con:databaseConnectionContainer>
+      <con:databaseConnection>
+        <con:name>test</con:name>
+        <con:driver>com.mysql.jdbc.Driver</con:driver>
+        <con:connectionString>jdbc:mysql://127.0.0.1:3306/OrdersBase?user=AD\Kirill.Zakharov&amp;password=PASS_VALUE</con:connectionString>
+        <con:password>Trfnthbyf344322362</con:password>
+        <con:connectionProperties/>
+      </con:databaseConnection>
+    </con:databaseConnectionContainer>
+    <con:jmsConnectionContainer/>
+  </con:environment>
+  <con:authRepository/>
+  <con:tags>
+    <con:tag>
+      <con:id>3cce8a27-a4d6-4505-9ea2-be539da22232</con:id>
+      <con:name>test</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>e4f6e595-4e45-428d-9c31-8997b2fc673b</con:id>
+      <con:name>test1</con:name>
+    </con:tag>
+  </con:tags>
+</con:soapui-project>
